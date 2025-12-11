@@ -1,0 +1,29 @@
+//linklist (01)
+#include<iostream>
+using namespace std;
+struct node{
+int data;
+node* next;
+
+};
+int main(){
+node* head;
+
+node n1;
+n1.data=10;
+n1.next=NULL;
+cout<<"n1.data="<<n1.data<<endl;//output 10
+head=&n1; //& is a address 
+cout<<"head->data="<<head->data<<endl;
+cout<<"head->next="<<head->next<<endl;
+
+node* temp;
+temp=head;   //temp is a same head because they are same size (eg.cup)
+cout<<"head->data="<<head->data<<endl;
+cout<<"head->next="<<head->next<<endl;
+
+
+
+
+return 0;
+}
