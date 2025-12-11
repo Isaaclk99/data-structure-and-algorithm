@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+struct node{
+int data;
+node* next;
+
+};
+
+int main(){
+node* head;
+node n1={11,NULL}; //you can use anything you like (link02 method or this method)
+node n2={22,NULL};
+node n3={33,NULL};
+
+head=&n1;
+n1.next=&n2;
+n1.next=&n3;
+
+//2 way method (1)
+node* temp;
+temp=head;
+cout<<temp->data<<""<<temp->next<<endl;
+temp=temp->next;
+cout<<temp->data<<""<<temp->next<<endl;
+temp=temp->next;
+cout<<temp->data<<""<<temp->next<<endl;
+
+//(2)
+node* temp;
+while(temp!=NULL){
+cout<<"temp->data="<<temp->next<<endl;
+temp=temp->next;
+
+}
+
+return 0;
+}
