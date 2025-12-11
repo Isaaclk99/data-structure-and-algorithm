@@ -1,0 +1,37 @@
+//linklist (02)
+#include<iostream>
+using namespace std;
+struct node{
+int data;
+node* next;
+
+};
+int main(){
+node* head;
+node n1;
+n1.data=10;
+n1.next=NULL;
+
+node n2;
+n2.data=20;
+n2.next=NULL;
+
+node n3;
+n3.data=30;
+n3.next=NULL;
+
+node n4;
+n4.data=40;
+n4.next=NULL;
+
+head=&n1;
+n1.next=&n2;
+n2.next=&n3;
+n3.next=&n4;
+
+cout<<"head->data="<<head->data<<endl;
+
+
+
+return 0;
+}
