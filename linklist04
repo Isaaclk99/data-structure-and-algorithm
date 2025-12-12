@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+struct node{
+int data;
+node* next;
+};
+void display(){
+cout<<"display"<<endl;
+node* temp;
+while(temp!=NULL){
+cout<<temp->data<<"";
+temp=temp-->next;
+}//while
+}//display
+
+int main(){
+node* head;
+ node n1;
+n1.data=10; //this method is first way
+
+n1.next=NULL;
+n1.data={10,NULL}; //this method is second way
+n2.data={20,NULL};
+n3.data={30,NULL};
+n4.data={40,NULL};
+
+node* n1=new node{10,NULL};//this method is third way
+node* n2=new node{20,NULL};
+node* n3=new node{30,NULL};
+node* n4=new node{40,NULL};
+
+head=&n1;
+n1.next=&n2;
+n2.next=&n3;
+n3.next=&n4;
+cout<<head->data<<endl;
+
+node* temp;
+temp=head;
+cout<<temp->data; //output 10
+cout<<temp->next; //output is n2 address
+display(head);
+
+
+
+
+return 0;
+}
