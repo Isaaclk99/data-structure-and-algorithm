@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+stack<int> st;
+st.push(3);
+st.push(5);
+st.push(8);
+st.push(7);
+st.push(7);
+
+
+cout<<st.bottom()<<endl;
+
+return 0;
+}
