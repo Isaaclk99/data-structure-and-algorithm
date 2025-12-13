@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+stack<int> st;
+st.push(4);
+st.push(2);
+st.push(7);
+st.push(3);
+st.push(8);
+cout<<st.top()<<endl<<"............"<<endl; //top is (show)
+st.pop(); //pop is delect
+
+int x=st.size();
+cout<<"x="<<x<<endl;
+
+
+return 0;
+}
